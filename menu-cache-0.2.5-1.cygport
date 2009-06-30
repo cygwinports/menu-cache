@@ -1,0 +1,10 @@
+DESCRIPTION="LXDE desktop menu library"
+HOMEPAGE="http://lxde.org/"
+SRC_URI="mirror://sourceforge/lxde/${P}.tar.gz"
+PATCH_URI="0.2.5-MAXSYMLINKS.patch"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+libmenu_cache0_CONTENTS="usr/bin/*-0.dll usr/lib/${PN}/ usr/share/doc/"
+libmenu_cache_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/${PN}"

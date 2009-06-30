@@ -1,0 +1,14 @@
+--- origsrc/menu-cache-0.2.5/menu-cache-gen/canonicalize.c	2008-06-12 06:55:50.000000000 -0500
++++ src/menu-cache-0.2.5/menu-cache-gen/canonicalize.c	2009-06-29 23:38:16.611503800 -0500
+@@ -32,6 +32,11 @@
+ #include <errno.h>
+ #include <stddef.h>
+ 
++#ifdef __CYGWIN__
++#define MAXSYMLINKS 10
++#endif
++
++
+ /* Return the canonical absolute name of file NAME.  A canonical name
+    does not contain any `.', `..' components nor any repeated path
+    separators ('/') or symlinks.  All path components must exist.  If
