@@ -5,19 +5,19 @@ the manipulation for freedesktop.org defined application menus.
 It can be used as a replacement of libgnome-menu of gnome-menus.
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.3-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libglib2.0_0-2.22.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-13
+  autoconf2.5-2.65-10
+  automake1.10-1.10.3-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -31,38 +31,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack menu-cache-0.2.5-X-src.tar.bz2
+  unpack menu-cache-0.2.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./menu-cache-0.2.5-X.cygport all
+  cygport ./menu-cache-0.2.6-X.cygport all
 
 This will create:
-  /usr/src/menu-cache-0.2.5-X-src.tar.bz2
-  /usr/src/menu-cache-0.2.5-X.tar.bz2
+  /usr/src/menu-cache-0.2.6-X-src.tar.bz2
+  /usr/src/menu-cache-0.2.6-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-(libmenu-cache0)
-  /usr/bin/cygmenu-cache-0.dll
-  /usr/lib/menu-cache/menu-cache-gen.exe
-  /usr/lib/menu-cache/menu-cached.exe
-  /usr/share/doc/menu-cache/AUTHORS
-  /usr/share/doc/menu-cache/COPYING
-  /usr/share/doc/menu-cache/README
-
-(libmenu-cache-devel)
-  /usr/include/menu-cache/menu-cache.h
-  /usr/lib/libmenu-cache.a
-  /usr/lib/libmenu-cache.dll.a
-  /usr/lib/libmenu-cache.la
-  /usr/lib/pkgconfig/libmenu-cache.pc
-
-------------------
-
 Port Notes:
+
+----- version 0.2.6-1 -----
+Version bump.
+Added patch to use XDG spec-compliant defaults for XDG_* environment variables.
 
 ----- version 0.2.5-1 -----
 Initial release for Cygwin 1.7.
