@@ -1,7 +1,0 @@
-category: X11
-requires: libglib2.0_0
-external-source: menu-cache
-sdesc: "Desktop application menu library (runtime)"
-ldesc: "Libmenu-cache is a library creating and utilizing caches to 
-speed up the manipulation for freedesktop.org defined application menus. 
-It can be used as a replacement of libgnome-menu of gnome-menus."
