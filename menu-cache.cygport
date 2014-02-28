@@ -1,5 +1,5 @@
 NAME="menu-cache"
-VERSION=0.5.0
+VERSION=0.5.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="LXDE desktop menu library"
