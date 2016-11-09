@@ -1,5 +1,5 @@
 NAME="menu-cache"
-VERSION=1.0.0
+VERSION=1.0.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="LXDE desktop menu library"
@@ -8,7 +8,6 @@ speed up the manipulation for freedesktop.org defined application menus.
 It can be used as a replacement of libgnome-menu of gnome-menus."
 HOMEPAGE="http://lxde.org/"
 SRC_URI="mirror://sourceforge/lxde/${NAME}-${VERSION}.tar.xz"
-PATCH_URI="0.2.6-xdg-env-defaults.patch"
 
 PKG_NAMES="${NAME} lib${NAME}3 lib${NAME}-devel"
 menu_cache_SUMMARY="${SUMMARY% *} service"
